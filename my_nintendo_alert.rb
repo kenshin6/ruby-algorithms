@@ -1,6 +1,7 @@
 #Checks to see if the Switch is in stock on nintendo's Japanese store.
 #Unfortunately, I don't know what the page looks like when it's in stock,
 #so this simply sends a notification to your mac when SOLD OUT dissapears.
+#Feel free to use!
 
 require 'net/http'
 

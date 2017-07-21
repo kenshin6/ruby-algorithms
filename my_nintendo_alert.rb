@@ -19,7 +19,7 @@ total = 0
     uri = URI('https://store.nintendo.co.jp/customize.html')
     File.write('store.html', Net::HTTP.get(uri))
     total += 1
-    unlee File.readlines('store.html').grep(/SOLD OUT/).any?
+    unless File.readlines('store.html').grep(/SOLD OUT/).any?
       notify_me
       break
     end
